@@ -87,17 +87,21 @@ E-Commers/
 
 ## Variables de Entorno
 
-| Variable | Descripcion | Default |
-|----------|-------------|---------|
-| `DB_HOST` | Host de PostgreSQL | `db` |
-| `DB_PORT` | Puerto de PostgreSQL | `5432` |
-| `DB_USER` | Usuario de PostgreSQL | `ecommerce_user` |
-| `DB_PASS` | Contrasena de PostgreSQL | `ecommerce_pass` |
-| `DB_NAME` | Nombre de la base de datos | `ecommerce` |
-| `JWT_SECRET` | Secreto para firmar tokens JWT | `super-secret-change-me-in-production` |
-| `JWT_EXPIRES` | Tiempo de expiracion del token | `24h` |
-| `PORT` | Puerto del backend | `3000` |
-| `NEXT_PUBLIC_API_URL` | URL del API para el frontend | `http://localhost:3000` |
+Crea un archivo `.env` en la raiz del proyecto con las siguientes variables:
+
+| Variable | Descripcion | Requerido |
+|----------|-------------|-----------|
+| `DB_HOST` | Host de PostgreSQL | Si |
+| `DB_PORT` | Puerto de PostgreSQL | Si |
+| `DB_USER` | Usuario de PostgreSQL | Si |
+| `DB_PASS` | Contrasena de PostgreSQL | Si |
+| `DB_NAME` | Nombre de la base de datos | Si |
+| `JWT_SECRET` | Secreto para firmar tokens JWT | Si |
+| `JWT_EXPIRES` | Tiempo de expiracion del token | No |
+| `PORT` | Puerto del backend | No |
+| `NEXT_PUBLIC_API_URL` | URL del API para el frontend | No |
+
+> Ver `.env.example` para valores de ejemplo.
 
 ## API Endpoints
 
