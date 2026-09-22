@@ -1,0 +1,10 @@
+node_modules
+dist
+.git
+.gitignore
+.env
+*.md
+.prettierrc
+.oxlintrc.json
+vitest.config.ts
+vitest.config.e2e.ts
